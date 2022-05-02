@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop-down Menu design _ Easy Tutorials</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #557085;
+        }
+
+        .menu-bar {
+            background: rgba(0, 100, 0);
+            text-align: center;
+        }
+
+        .menu-bar ul {
+            display: inline-flex;
+            list-style: none;
+            color: #fff;
+        }
+
+        .menu-bar ul li {
+            width: 120px;
+            margin: 15px;
+            padding: 15px;
+        }
+
+        .menu-bar ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .active,
+        .menu-bar ul li:hover {
+            background: #2bab0d;
+            border-radius: 3px;
+        }
+
+        .menu-bar .fa {
+            margin-right: 8px;
+        }
+
+        .sub-menu-1 {
+            display: none;
+
+        }
+
+        .menu-bar ul li:hover .sub-menu-1 {
+            display: block;
+            position: absolute;
+            background: rgba(0, 100, 0);
+            margin-top: 15px;
+            margin-left: -15px;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul{
+            display: block;
+            margin: 10px;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul li{
+            width: 150px;
+            padding: 10px;
+            border-bottom: 1px dotted #fff;
+            background: transparent;
+            border-radius: 0;
+            text-align: left;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+            border-bottom: none;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+            color: #b2ff00;
+        }
+        .fa-angle-right{
+            float: right;
+        }
+        .sub-menu-2{
+            display: none;
+        }
+        .hover-me:hover .sub-menu-2{
+            position: absolute;
+            display: block;
+            margin-top: -40px;
+            margin-left: 140px;
+            background: rgba(0, 100, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fa fa-user"></i>About Us</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                </div>    
+            </li>
+    <li><a href="#"><i class="fa fa-clone"></i>Services</a>
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="#">Web Designing</a></li>
+                <li class="hover-me"><a href="#">Marketing</a><i class="fa fa-angle-right"></i>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="#">SEO</a></li>
+                        <li><a href="#">Social</a></li>
+                        <li><a href="#">Email Marketing</a></li>
+                    </ul>
+                </div>
+            </li>
+                <li class="hover-me"><a href="#">Mobile App</a><i class="fa fa-angle-right"></i>
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li><a href="#">Android Ap</a></li>
+                            <li><a href="#">IOS App</a></li>
+                            <li><a href="#">Ionic App</a></li>
+                            <li><a href="#">Flutter App</a></li>
+                            <li><a href="#">Unity App</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li><a href="#"><i class="fa fa-users"></i>Cilents</a></li>
+    <li><a href="#"><i class="fa fa-angellist"></i>Investers</a></li>
+    <li><a href="#"><i class="fa fa-inr"></i>Pricing</a></li>
+    <li><a href="#"><i class="fa fa-edit"></i>Training</a></li>
+    <li><a href="#"><i class="fa fa-phone"></i>Contact</a></li>
+    </ul>
+    </div>
+</body>
+
+</html>
