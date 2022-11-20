@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Website</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="./img/1.png" class="logo">
+        <div class="toggle">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <nav>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./ourstory.html">Our Story</a>
+            </li>
+            <li class="active"><a href="./ourdifferent.html">Our differences</a>
+            </li>
+            <li><a href="./themes.html">Theme and Vision</a></li>
+            <li><a href="./number.html">Number of guests</a></li>
+            <li><a href="./budget.html">Budget</a></li>
+            <li class="drop"><a href="./plaining.html">Planning Timeline</a>
+                <ul>
+                    <li><a href="./plaining.html#timeline">Timeline</a></li>
+                    <li><a href="./plaining.html#product">Production Timeline</a></li>
+                </ul>
+            </li>
+            <li class="drop"><a href="./specific.html">Specific Elements</a>
+                <ul>
+                    <li><a href="./specific.html#invite">Invitations</a></li>
+                    <li><a href="./specific.html#rsvp">RSVP</a></li>
+                    <li><a href="./specific.html#wedding">Wedding attire</a></li>
+                    <li><a href="./specific.html#flower">Flower Decor</a></li>
+                    <li><a href="./specific.html#floral">Floral Decor for Reception</a></li>
+                    <li><a href="./specific.html#reading">Reading for Ceremony </a></li>
+                    <li><a href="./specific.html#photograpy">Photography</a></li>
+                    <li><a href="./specific.html#fb">F&B</a></li>
+                    <li><a href="./specific.html#cake">Wedding Cake</a></li>
+                    <li><a href="./specific.html#logging">Transportation and lodging</a></li>
+                    <li><a href="./specific.html#rings">Wedding rings</a></li>
+                    <li><a href="./specific.html#makeup">Make up/ hair make up(Mai Wedding)</a></li>
+                </ul>
+            </li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./source.html">Sources</a></li>
+        </nav>
+    </header>
+    <div class="content">
+        <img src="./img/detail.jpg" alt="">
+    </div>
+
+    <section>
+        <div class="val">
+            <div class="hulo">
+                <h1>OUR DIFFERENCES</h1>
+                <p>Ngoc and David come from two different cultures. Ngoc came from Vietnam to the U.S to study and
+                    pursue her passion, all of her family still living in Vietnam . David was born in Virginia and he
+                    has been close to his family, he doesn;t have any other culture experience other than the American
+                    culture.</p>
+                <p>Ngoc and David also have a very different personality due to the upbringing of their life. Ngoc was
+                    born and raised in an environment where her career path is not always supported,that’s why she
+                    started to keep everything to herself and got less socially active. She eventually became an
+                    introvert. On the other hand David was always an outgoing person. An extrovert, he joined multiple
+                    sport teams, participating in multiple clubs and always down to networking.
+                </p>
+            </div>
+            <div class="imgBx">
+                <img src="./img/3.jpg" alt="">
+            </div>
+        </div>
+        <footer>&copy; 2022 This website details a hypothetical wedding for a university class project.</footer>
+    </section>
+
+    <script>
+        let nav = document.querySelector('nav');
+        let menuToggle = document.querySelector('.toggle');
+        menuToggle.onclick = function () {
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

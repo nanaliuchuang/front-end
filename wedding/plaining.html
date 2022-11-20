@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Website</title>
+    <link rel="stylesheet" href="./theme.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="our">
+        <img src="./img/1.png" class="logo">
+        <div class="toggle">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <nav>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./ourstory.html">Our Story</a>
+            </li>
+            <li><a href="./ourdifferent.html">Our differences</a>
+            </li>
+            <li><a href="./themes.html">Theme and Vision</a></li>
+            <li><a href="./number.html">Number of guests</a></li>
+            <li><a href="./budget.html">Budget</a></li>
+            <li class="drop active"><a href="./plaining.html">Planning Timeline</a>
+                <ul>
+                    <li><a href="#timeline" class="activer">Timeline</a></li>
+                    <li><a href="#product">Production Timeline</a></li>
+                </ul>
+            </li>
+            <li class="drop"><a href="./specific.html">Specific Elements</a>
+                <ul>
+                    <li><a href="./specific.html#invite">Invitations</a></li>
+                    <li><a href="./specific.html#rsvp">RSVP</a></li>
+                    <li><a href="./specific.html#wedding">Wedding attire</a></li>
+                    <li><a href="./specific.html#flower">Flower Decor</a></li>
+                    <li><a href="./specific.html#floral">Floral Decor for Reception</a></li>
+                    <li><a href="./specific.html#reading">Reading for Ceremony </a></li>
+                    <li><a href="./specific.html#photograpy">Photography</a></li>
+                    <li><a href="./specific.html#fb">F&B</a></li>
+                    <li><a href="./specific.html#cake">Wedding Cake</a></li>
+                    <li><a href="./specific.html#logging">Transportation and lodging</a></li>
+                    <li><a href="./specific.html#rings">Wedding rings</a></li>
+                    <li><a href="./specific.html#makeup">Make up/ hair make up(Mai Wedding)</a></li>
+                </ul>
+            </li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./source.html">Sources</a></li>
+        </nav>
+    </header>
+    
+    <section id="timeline">
+        <div class="bg">
+            <img src="./img/10.jpg" alt="">
+        </div>
+        <div class="textz">
+            <h4><span><i class="fa-solid fa-book"></i> The story <i class="fa-solid fa-book"></i></i></span> </h4>
+            <p>The planning of the wedding will take place in 16 months. Beginning in March 2022. Since Ngoc and David wanted to get settled down and have a decent income before getting engaged, they already have their savings so they are financially ready for the wedding. Ngoc wanted to create her own wedding design but her schedule is packed until May of 2022 therefore she can only get started then. The time difference also makes it more difficult for the couple to work with the wedding planners, Ngoc and David are currently living in America and they are planning a wedding in Vietnam. There will be an 11 hours time difference, and 12 hours difference during daylight saving. The Ceremony will be held on Sunday, July 9th, 2023 at 7 am.                                              One of the challenges is the research phase. As it is the start of the project where David and Ngoc haven’t changed their schedule to work together on the project. It was also hard to meet at a reasonable time with the venue's representative since there is 12 hours difference. With the uncoordinated schedule, there has been a lot of delay in the research phase. Ngoc also wanted the venues to be checked out by her friends in Vietnam and was furthermore delayed in the process.                           The second challenge was during the decoration phase since Ngoc wanted to design the venues herself. Since she couldn’t be at the venue physically, she has a hard time planning it. With the vision of blending both wedding cultures, the design has to have a balance between traditional and western weddings, it took a lot of time to figure out the color combinations and designs for it to be balanced. </p>    
+        </div>
+    </div>
+    </section>
+    <section id="product"><div class="bg">
+        <img src="./img/detail.jpg" alt="">
+    </div>
+    <div class="context ">
+        <div class="text" style="min-height: 250px; padding: 10px">
+            <h4><span><i class="fa-solid fa-file-pdf" style="margin-right: 10px;"></i> Document <i class="fa-solid fa-file-pdf" style="margin-left: 10px;"></i></span> </h4>
+            <p style="padding: 10px;color: rgba(225, 228, 231, 0.825)">Documents: <a href="./Production-Timeline.pdf" style="text-decoration: none;color: rgb(231, 224, 224);font-size: 0.75em" download><i class="fa-solid fa-download" style="margin: 0 10px;"></i>Product-Timeline document</a></p>
+        </div>
+    </div></section>
+    <footer class="end">&copy; 2022 This website details a hypothetical wedding for a university class project.</footer>
+    <script>
+        let nav = document.querySelector('nav');
+        let menuToggle = document.querySelector('.toggle');
+        menuToggle.onclick = function () {
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+        let section = document.querySelectorAll('section');
+        let navLink = document.querySelectorAll('.drop ul li a');
+        window.onscroll = () =>{
+            section.forEach(sec =>{
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 150;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
+
+                if(top >= offset && top < offset + height){
+                    navLink.forEach(link =>{
+                        link.classList.remove('activer');
+                        document.querySelector('.drop ul li a[href*='+ id +']').classList.add('activer');
+                    })
+                };
+            });
+        };
+    </script>
+</body>
+
+</html>
