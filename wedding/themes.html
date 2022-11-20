@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Website</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body class="bgz">
+    <header class="cat">
+        <img src="./img/1.png" class="logo">
+        <div class="toggle">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <nav>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./ourstory.html">Our Story</a>
+            </li>
+            <li><a href="./ourdifferent.html">Our differences</a>
+            </li>
+            <li class="active"><a href="./themes.html">Theme and Vision</a></li>
+            <li><a href="./number.html">Number of guests</a></li>
+            <li><a href="./budget.html">Budget</a></li>
+            <li class="drop"><a href="./plaining.html">Planning Timeline</a>
+                <ul>
+                    <li><a href="./plaining.html#timeline">Timeline</a></li>
+                    <li><a href="./plaining.html#product">Production Timeline</a></li>
+                </ul>
+            </li>
+            <li class="drop"><a href="./specific.html">Specific Elements</a>
+                <ul>
+                    <li><a href="./specific.html#invite">Invitations</a></li>
+                    <li><a href="./specific.html#rsvp">RSVP</a></li>
+                    <li><a href="./specific.html#wedding">Wedding attire</a></li>
+                    <li><a href="./specific.html#flower">Flower Decor</a></li>
+                    <li><a href="./specific.html#floral">Floral Decor for Reception</a></li>
+                    <li><a href="./specific.html#reading">Reading for Ceremony </a></li>
+                    <li><a href="./specific.html#photograpy">Photography</a></li>
+                    <li><a href="./specific.html#fb">F&B</a></li>
+                    <li><a href="./specific.html#cake">Wedding Cake</a></li>
+                    <li><a href="./specific.html#logging">Transportation and lodging</a></li>
+                    <li><a href="./specific.html#rings">Wedding rings</a></li>
+                    <li><a href="./specific.html#makeup">Make up/ hair make up(Mai Wedding)</a></li>
+                </ul>
+            </li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./source.html">Sources</a></li>
+        </nav>
+    </header>
+    <div class="bg">
+        <img src="./img/hoa_1.jpg" alt="">
+    </div>
+    <div class="context">
+        <div class="text">
+            <h4><span><i class="fa-solid fa-star"></i> Theme <i class="fa-solid fa-star"></i></span> Traditional Vietnamese wedding theme with a mix of modern western wedding at a beach in Danang.</h4>
+            <h4><span><i class="fa-solid fa-ring"></i> Vision <i class="fa-solid fa-ring"></i></span> 
+            <li>The wedding will take place outdoors at a private beach section of the resort. It will be designed in red, white and pink. </li>
+            <li>Red represents the lucky color of Vietnam as it will bring luck and happiness into the marriage.  </li>
+            <li>White is the color presenting the pureness of their love and it presents a luxurious feel. </li>
+            <li>White is the color that is traditionally used in western weddings. </li>
+            <li>Pink is the mix of red and white it representing the two cultures that are being blended in this special event.
+            </li>
+        </h4>
+        </div>
+   <p class="footer">&copy; 2022 This website details a hypothetical wedding for a university class project.</p>
+
+    </div>
+
+    <script>
+        let nav = document.querySelector('nav');
+        let menuToggle = document.querySelector('.toggle');
+        menuToggle.onclick = function () {
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

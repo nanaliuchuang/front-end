@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Website</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="./img/1.png" class="logo">
+        <div class="toggle">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <nav>
+            <li><a href="./index.html">Home</a></li>
+            <li class="active"><a href="./ourstory.html">Our Story</a>
+            </li>
+            <li><a href="./ourdifferent.html">Our differences</a>
+            </li>
+            <li><a href="./themes.html">Theme and Vision</a></li>
+            <li><a href="./number.html">Number of guests</a></li>
+            <li><a href="./budget.html">Budget</a></li>
+            <li class="drop"><a href="./plaining.html">Planning Timeline</a>
+                <ul>
+                    <li><a href="./plaining.html#timeline">Timeline</a></li>
+                    <li><a href="./plaining.html#product">Production Timeline</a></li>
+                </ul>
+            </li>
+            <li class="drop"><a href="./specific.html">Specific Elements</a>
+                <ul>
+                    <li><a href="./specific.html#invite">Invitations</a></li>
+                    <li><a href="./specific.html#rsvp">RSVP</a></li>
+                    <li><a href="./specific.html#wedding">Wedding attire</a></li>
+                    <li><a href="./specific.html#flower">Flower Decor</a></li>
+                    <li><a href="./specific.html#floral">Floral Decor for Reception</a></li>
+                    <li><a href="./specific.html#reading">Reading for Ceremony </a></li>
+                    <li><a href="./specific.html#photograpy">Photography</a></li>
+                    <li><a href="./specific.html#fb">F&B</a></li>
+                    <li><a href="./specific.html#cake">Wedding Cake</a></li>
+                    <li><a href="./specific.html#logging">Transportation and lodging</a></li>
+                    <li><a href="./specific.html#rings">Wedding rings</a></li>
+                    <li><a href="./specific.html#makeup">Make up/ hair make up(Mai Wedding)</a></li>
+                </ul>
+            </li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./source.html">Sources</a></li>
+        </nav>
+    </header>
+    <div class="content">
+        <img src="./img/detail.jpg" alt="">
+    </div>
+    <section>
+        <h1>A Dream Of White</h1>
+        <div class="form">
+            <div class="van">
+                <h2>Cilent</h2>
+                <h2>Nationalities</h2>
+                <h2>Concept</h2>
+                <h2>Number of guests</h2>
+                <h2>Location</h2>
+            </div>
+            <div class="col">
+                <p>Ngoc & David</p>
+                <p>Vietnamese & American</p>
+                <p>Beach Wedding</p>
+                <p>60</p>
+                <p>Da Nang</p>
+            </div>
+        </div>
+        <h1>OUR STORY</h1>
+        <div class="val">
+            <div class="hulo">
+                <h1>The Bride</h1>
+                <p>Nguyen Bich Ngoc, a Vietnamese fashion designer currently living and working in New York City. She
+                    was born and raised in Danang City, Vietnam. She has been into drawing and designing since she was a
+                    small kid, but the idea of becoming a fashion designer is not always supported in Vietnam since it
+                    is new and risky. Therefore Ngoc never opens up about her passion which makes her shy and an
+                    introverted person. But her passion motivates her to do well in school with a hope of scholarship
+                    overseas where more opportunity present and support her passion. Her hard work has got her
+                    scholarship to NYU and it also proves to her parents she can pursue her passion. Her journey to the
+                    U.S began.</p>
+            </div>
+            <div class="imgBx">
+                <img src="./img//9.jpg" alt="">
+            </div>
+        </div>
+        <div class="val">
+            <div class="imgBx">
+                <img src="./img/5.jpg" alt="">
+            </div>
+            <div class="hulo">
+                <h1>The groom</h1>
+                <p>David Blane, a businessman working in New York City. David was born and raised in Virginia. He is an
+                    outgoing, social person, he plays multiple sports in highschool. He has a special power of making
+                    friends with everyone. He wanted to attend NYU studying financing, seek opportunity and start
+                    networking with people to eventually start his business. He has everything planned out but it hasn’t
+                    gone as planned. He started off college strong but he got carried away by partying. His grade goes
+                    down non stop the second semester and has lost his scholarship.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="hulo1">
+                <h1>How to meet</h1>
+                <p>Now after knowing their background you might ask how can these two totally different people meet and fall in love with each other. Well, they got into a class together and got assigned as a group for a semester project. At first Ngoc only shared project related stuff with David, and David as an extrovert he got to talk about everything but the project. David is not doing any work and leaving Ngoc to do everything. One day Ngoc couldn’t handle it anymore and just had a long yelling session at David, he had never seen her talk so much and been so angry before. He couldn’t say anything but sorry, the next day David reached out to Ngoc to ask her about the project and he got her food as a way of saying sorry. They started talking more and more and finally they fell in love with each other. 
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>&copy; 2022 This website details a hypothetical wedding for a university class project.</footer>
+    <script>
+        let nav = document.querySelector('nav');
+        let menuToggle = document.querySelector('.toggle');
+        menuToggle.onclick = function () {
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
